@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter" , sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/baaf5bbe2cf6344e9a5fb9af666fa17f2aaf9986\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; 
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 40px;
+    background-color: #181111;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-content {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 900;
+    color: #ffffff;
+    padding-left: 8px ;
+}
+.header-content-color{
+    color: #e60a15;
+}
+.home {
+    text-decoration: none;
+    color: #cbd5e1;
+}
+.header-right {
+    display: flex;
+    gap: 36px;
+    color: #cbd5e1;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+.btn-login {
+    background-color: #E70814;
+    color:#ffffff ;
+    padding: 9.5px 24px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 
+    0px 4px 6px -4px rgba(231, 8, 20, 0.3), 
+    0px 10px 15px -3px rgba(231, 8, 20, 0.3);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+}
+.btn-login:hover {
+    background-color: #c40610; 
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box {
+    margin: 130px 0 0 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #111827;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+}
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group .input {
+  width: 100%;
+  padding: 14px 45px 14px 17px;
+  border: 2px solid #1e293b;
+  border-radius: 8px;
+  background-color: #172030;
+  color: #94a3b8;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* CHỈNH SỬA: Đổi class từ .toggle-password thành .toggle-password-btn để dễ phân biệt */
+.toggle-password-btn {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+}
+
+/* CHỈNH SỬA: Thêm hover effect cho icon mắt */
+.toggle-password-btn:hover {
+  opacity: 1;
+}
+
+.content-box {
+    text-align: center;
+    color: #94a3b8;
+    margin-top: 8px;
+}
+.img-form {
+    width : 100% ;
+    height : 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.welcome {
+    color: white;
+    justify-content: center;
+    font-weight: 750;
+    font-size: 30px;
+    line-height: 36px;
+    vertical-align: middle;
+    text-align: center;
+}
+.box-content {
+    padding: 12px 32px;
+    top: -15px;
+}
+.decor-text {
+    color: #E2E8F0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.input {
+    border: 2px solid #1e293b;
+    padding: 14px 17px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    background-color: #172030;
+    color:  #94a3b8 ;
+    transition: border-color 0.3s ease;
+}
+.input::placeholder{
+    color: #94a3b8;
+}
+
+/* CHỈNH SỬA: Xóa viền đỏ - focus state không thay đổi viền */
+.input:focus {
+    border-color: #1e293b;
+}
+
+.btn-login-2 {
+    display: flex;
+    width: 100%;
+    padding: 12px ;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #E70814;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    box-shadow: 
+    0px 4px 6px -4px rgba(231, 8, 20, 0.3), 
+    0px 10px 15px -3px rgba(231, 8, 20, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* CHỈNH SỬA: Thêm hover effect cho nút đăng ký */
+.btn-login-2:hover {
+    background-color: #c40610;
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #CBD5E1;
+    align-items: center;
+}
+.checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* CHỈNH SỬA: Đổi id từ #box thành #terms-checkbox */
+#terms-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #48628b;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  background-color: #334155;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+#terms-checkbox:checked {
+  background-color: #94a3b8;
+}
+#terms-checkbox:checked::after {
+  content: '✔';
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CHỈNH SỬA: Thêm CSS cho toast container */
+#toast-container {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+/* CHỈNH SỬA: Thêm CSS cho toast messages */
+.toast {
+    width: 350px;
+    padding: 15px 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    border-left: 6px solid;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    transform: translateX(120%);
+    opacity: 0;
+}
+
+.toast.success {
+    border-left-color: #2ecc71;
+}
+
+.toast.error {
+    border-left-color: #E70814;
+}
+
+.toast-content {
+    margin-left: 20px;
+}
+
+.toast-title {
+    display: block;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.toast-msg {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.term {
+    color: #e60a15;
+    text-decoration: none;
+}
+.term:hover {
+    text-decoration: underline;
+}
+
+.account {
+    color:  #BB9B9C;
+    text-align: center;
+    padding: 10px;
+}
+.register {
+    text-decoration: none;
+    font-weight: 700;
+    color: #E70814;
+}
+.register:hover {
+    text-decoration: underline;
+}
+
+.source {
+    color: #9CA3AF;
+    margin-bottom: 120px;
+}

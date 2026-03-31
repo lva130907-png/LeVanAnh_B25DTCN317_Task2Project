@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Kí Tài Khoản</title>
+    <link rel="stylesheet" href="../css/register.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <img src="../assets/icons/login/icon-login.png" alt="icon" />
+        <div class="header-content">Rikkei <span class="header-content-color">Cinema</span></div>
+      </div>
+      <div class="header-right">
+        <div> <a class="home" href="./index.html">Trang chủ</a></div>
+        <div>Thông tin</div>
+        <div>Liên hệ</div>
+        <div> <a href="./login.html"><button class="btn-login">Đăng nhập</button></a></div>
+      </div>
+    </header>
+    <section class="section">
+        <form class="box">
+            <div class="box-content">
+                <div class="welcome">Tạo tài khoản mới</div>
+                <div class="content-box">Đăng ký để đặt vé xem phim ngay hôm nay</div>
+                <br><br>
+                
+                <!-- CHỈNH SỬA: Thêm id="fullname-input" để lấy giá trị trong JS -->
+                <div class="decor-text">Họ và tên</div>
+                <input id="fullname-input" class="input" type="text" placeholder="Nguyễn Văn A" />
+                <br><br>
+
+                <!-- CHỈNH SỬA: Thêm id="email-input" để lấy giá trị trong JS -->
+                <div class="decor-text">Email</div>
+                <input id="email-input" class="input" type="text" placeholder="email@example.com" />
+                <br><br>
+
+                <div class="icon-pass">
+                  <div class="decor-text">Mật khẩu</div>
+                  <!-- CHỈNH SỬA: Thêm id="password-input" để lấy giá trị trong JS -->
+                  <div class="input-group">
+                    <input id="password-input" class="input" type="password" placeholder="******" />
+                    <!-- CHỈNH SỬA: Thêm class="toggle-password-btn" để bắt sự kiện click -->
+                    <img class="toggle-password-btn" src="../assets/icons/register/iconeye.png" alt="icon pass">
+                  </div>
+                </div>
+
+                <br><br>
+
+                <div class="icon-pass">
+                  <div class="decor-text">Xác nhận mật khẩu</div>
+                  <!-- CHỈNH SỬA: Thêm id="confirm-password-input" để lấy giá trị trong JS -->
+                  <div class="input-group">
+                    <input id="confirm-password-input" class="input" type="password" placeholder="******" />
+                    <!-- CHỈNH SỬA: Thêm class="toggle-password-btn" để bắt sự kiện click -->
+                    <img class="toggle-password-btn" src="../assets/icons/register/iconeye.png" alt="icon pass">
+                  </div>
+                </div>
+                <br><br>
+
+                <!-- CHỈNH SỬA: Sửa id từ "box" thành "terms-checkbox" để dễ hiểu hơn -->
+                <div class="note">
+                    <div class="checkbox">
+                        <input id="terms-checkbox" type="checkbox" /> 
+                        Tôi đồng ý với <a class="term" href="">điều khoản sử dụng</a> và chính sách bảo mật của CineEdu
+                    </div>
+                </div>
+                <br>
+
+                <!-- CHỈNH SỬA: Thêm type="submit" để form có thể submit -->
+                <button class="btn-login-2" type="submit">
+                    Đăng kí <img src="../assets/icons/login/icon-login-2.png" alt="icon" />
+                </button>
+
+                <div class="account">
+                    Đã có tài khoản ?
+                    <span><a class="register" href="./login.html">Đăng nhập ngay</a></span>
+                </div>
+            </div>    
+        </form>
+        <br><br>
+        <div class="source">© 2026 RikkeiEdu. Tất cả quyền được bảo mật.</div>
+    </section>
+  </body>
+  <!-- CHỈNH SỬA: Thêm div#toast-container để hiển thị thông báo -->
+  <div id="toast-container"></div>
+  <script src="../js/register.js"></script>
+</html>

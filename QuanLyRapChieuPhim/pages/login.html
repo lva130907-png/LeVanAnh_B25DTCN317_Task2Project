@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập Tài Khoản</title>
+    <link rel="stylesheet" href="../css/login.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <img src="../assets/icons/login/icon-login.png" alt="icon" />
+        <div class="header-content">Rikkei <span class="header-content-color">Cinema</span></div>
+      </div>
+      <div class="header-right">
+        <div><a class="home" href="../pages/index.html">Trang chủ</a></div>
+        <div>Thông tin</div>
+        <div>Liên hệ</div>
+        <div> <a href="./login.html"><button class="btn-login">Đăng nhập</button></div></a>
+      </div>
+    </header>
+    <section class="section">
+        <form class="box">
+            <img class="img-form" src="../assets/images/background-login-decor.png" alt="ảnh bắp rang bơ">
+            <div class="box-content">
+                <div class="welcome">Chào mừng quay trở <br> lại</div>
+                <br><br>
+                <div class="decor-text">Email</div>
+                <div class="icon-login-3">
+                  <input id="email-input" class="input" type="text" placeholder="Nhập email của bạn" />
+                  <img src="../assets/icons/login/icon-email.png" alt="icon email">
+                </div>
+                <div class="decor-text">Mật khẩu</div>
+                <div class="icon-login-3">
+                  <input id="password-input" class="input" type="password" placeholder="Nhập mật khẩu của bạn" />
+                  <img src="../assets/icons/login/icon pass.png" alt="icon pass">
+                </div>
+                <div class="note">
+                    <div class="checkbox"><input id="box" type="checkbox" /> Ghi nhớ đăng nhập</div>
+                    <div ><a class="forget-password" href="">Quên mật khẩu?</a></div>
+                </div>
+                <br>
+                <button class="btn-login-2" type="submit">
+                    Đăng nhập <img src="../assets/icons/login/icon-login-2.png" alt="icon" />
+                </button>
+                <br>
+                <div class="account">
+                    Bạn chưa có tài khoản ?
+                    <span > <a class="register" href="./register.html">Đăng ký ngay</a></span>
+                </div>
+            </div>    
+        </form>
+    </section>
+  </body>
+  <div id="toast-container"></div>
+  <script src="../js/login.js"></script>
+</html>
