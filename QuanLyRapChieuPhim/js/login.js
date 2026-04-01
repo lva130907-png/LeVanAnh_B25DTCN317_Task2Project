@@ -107,10 +107,3 @@ btnLogin2.addEventListener('click', (e) => {
     e.preventDefault();
     validateLogin();
 });
-
-// Cho phép nhấn Enter để đăng nhập
-document.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        validateLogin();
-    }
-});
